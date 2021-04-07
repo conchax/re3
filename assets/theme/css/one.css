@@ -1,6 +1,6 @@
 .logo {
   position: absolute;
-  top: 70px;
+  top: 40px;
   left: 35px;
   display: block;
   z-index: 10000;
@@ -18,8 +18,9 @@
 .btn-group-vertical {
   position: absolute !important;
   z-index: 7000;
-  bottom: 50px;
-  left: 120px;
+  top: 150px;
+  left: 50%;
+  margin-left: -100px;
 }
 .btn-secondary,
 .btn-secondary:active,
@@ -29,7 +30,7 @@
   color: #ffffff !important;
 }
 .btn {
-  padding: 5px 10px !important;
+  padding: 5px 30px !important;
   border-radius: 30px !important;
 }
 .cid-srp0i5a8hV {
@@ -65,13 +66,18 @@
 .dropdown-menu {
   background-color: rgba(255, 255, 255, 0.7);
 }
-
-@media (max-width: 576px) {
-  .btn-group,
-  .btn-group-vertical {
-    position: absolute !important;
-    z-index: 7000;
-    bottom: 50px;
-    left: 25%;
-  }
+.tituloh {
+  font-weight: 700;
+}
+.cid-sqwHRszWKL .carousel-caption {
+  right: 0;
+  bottom: -55px;
+  left: 0;
+  top: auto;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #3399ff;
 }
