@@ -83,3 +83,8 @@
 .cid-srthlVF0Aw button.navbar-toggler {
   top: -25px;
 }
+button.navbar-toggler.menutext {
+  color: aliceblue;
+  border: 0;
+  margin: auto;
+}
