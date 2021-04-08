@@ -61,7 +61,8 @@ a {
   cursor: pointer;
 }
 
-a, a:hover {
+a,
+a:hover {
   text-decoration: none;
 }
 
@@ -105,7 +106,10 @@ blockquote {
   border-color: #ff3366;
 }
 
-input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
   transition-delay: 9999s;
   transition-property: background-color, color;
 }
@@ -304,8 +308,8 @@ figure[mbr-media-size] {
 
 /*! Buttons */
 .mbr-section-btn {
-  margin-left: -.25rem;
-  margin-right: -.25rem;
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
   font-size: 0;
 }
 
@@ -401,7 +405,7 @@ nav .mbr-section-btn {
   outline-style: none !important;
   position: relative;
   text-decoration: none;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
   text-align: center;
 }
@@ -611,7 +615,7 @@ animation: gradient-animation 4s infinite alternate;
 }
 
 .nav-dropdown .link {
-  padding: .667em 1.667em !important;
+  padding: 0.667em 1.667em !important;
   margin: 0 !important;
 }
 
@@ -645,7 +649,7 @@ animation: gradient-animation 4s infinite alternate;
 }
 
 .jq-selectbox__select {
-  padding: 1.07em .5em;
+  padding: 1.07em 0.5em;
   position: absolute;
   top: 0;
   left: 0;
@@ -664,11 +668,11 @@ animation: gradient-animation 4s infinite alternate;
 
 .jq-selectbox__trigger-arrow {
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .jq-selectbox li {
-  padding: 1.07em .5em;
+  padding: 1.07em 0.5em;
 }
 
 input[type="range"] {
@@ -704,7 +708,7 @@ input[type="range"] {
   border: none;
   border-radius: 0;
   background-color: transparent;
-  padding: .5rem 0rem;
+  padding: 0.5rem 0rem;
   border-bottom: 1px solid #000000;
 }
 
@@ -738,10 +742,10 @@ body {
   border-width: 1px;
   font-style: normal;
   letter-spacing: normal;
-  margin: .4rem .8rem;
+  margin: 0.4rem 0.8rem;
   white-space: normal;
   transition-property: background-color, color, border-color, box-shadow;
-  transition-duration: .3s, .3s, .3s, 2s;
+  transition-duration: 0.3s, 0.3s, 0.3s, 2s;
   transition-timing-function: ease-in-out;
   display: inline-flex;
   align-items: center;
@@ -753,13 +757,15 @@ body {
   font-size: 1.6rem;
 }
 
-.btn:hover:after, .btn:focus:after, .btn.active:after {
-  content: '';
+.btn:hover:after,
+.btn:focus:after,
+.btn.active:after {
+  content: "";
   border: 1px solid;
   border-color: inherit;
   width: 100%;
   height: 100%;
-  transition: border-radius .3s;
+  transition: border-radius 0.3s;
   position: absolute;
   left: 0%;
   top: 0%;
@@ -774,21 +780,21 @@ body {
   border: 1px solid;
   font-weight: 500;
   letter-spacing: normal;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-md {
   font-weight: 500;
   letter-spacing: normal;
-  margin: .4rem .8rem !important;
-  transition: all .3s ease-in-out;
+  margin: 0.4rem 0.8rem !important;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-lg {
   font-weight: 500;
   letter-spacing: normal;
-  margin: .4rem .8rem !important;
-  transition: all .3s ease-in-out;
+  margin: 0.4rem 0.8rem !important;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-form {
@@ -800,7 +806,7 @@ body {
 }
 
 #scrollToTop a i:before {
-  content: '';
+  content: "";
   position: absolute;
   height: 40%;
   top: 25%;
@@ -810,7 +816,7 @@ body {
 }
 
 #scrollToTop a i:after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   border-top: 2px solid #fff;
@@ -824,7 +830,7 @@ body {
 }
 
 /* Others*/
-.note-check a[data-value=Rubik] {
+.note-check a[data-value="Rubik"] {
   font-style: normal;
 }
 
@@ -841,7 +847,7 @@ body {
 .form-control-label {
   position: relative;
   cursor: pointer;
-  margin-bottom: .357em;
+  margin-bottom: 0.357em;
   padding: 0;
 }
 
@@ -849,7 +855,7 @@ body {
   color: #ffffff;
   border-radius: 0;
   border: 0;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   margin-bottom: 1.875rem;
   padding: 1.25rem;
@@ -876,7 +882,7 @@ body {
   color: #565656;
   line-height: 1.43;
   min-height: 3.5em;
-  padding: 1.07em .5em;
+  padding: 1.07em 0.5em;
 }
 
 .form-active .form-control:invalid {
@@ -887,7 +893,7 @@ body {
   background-color: #000;
   bottom: 0;
   left: 0;
-  opacity: .5;
+  opacity: 0.5;
   position: absolute;
   right: 0;
   top: 0;
@@ -930,9 +936,9 @@ pre {
 }
 
 @media (max-width: 767px) {
-  .btn {
+  /*  .btn {
     font-size: .75rem !important;
-  }
+  } */
   .btn .mbr-iconfont {
     font-size: 1rem !important;
   }

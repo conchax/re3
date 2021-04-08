@@ -62,7 +62,6 @@
 
     <nav class="navbar navbar-dropdown collapsed ">
       <div class="mbr-overlay" style="opacity: 0.9;"></div>
-
       <a class="full-link" href="#">
       </a>
       <!-- <div class="menu-top card-wrapper mbr-fonts-style mbr-white display-7">
@@ -124,7 +123,7 @@
       <div class="mbr-slider slide carousel" data-keyboard="false" data-ride="carousel" data-interval="5000"
         data-pause="true">
         <div class="logo">
-          <img width="120px" src="./assets/images/logo2.png" alt="RE3 Creative Studio Spaces">
+          <img width="100px" src="./assets/images/logo2.png" alt="RE3 Creative Studio Spaces">
         </div>
         <div class="btn-group dropup">
           <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
@@ -240,7 +239,7 @@
       <div class="row main mb-4">
         <div class="col align-center">
           <div class="img-wrap">
-            <img src="assets/images/beneficios-3-612x324.png" alt="" title="Benefits and Process">
+            <img class="img-fluid" src="assets/images/beneficios-3-612x324.png" alt="" title="Benefits and Process">
           </div>
         </div>
       </div>
@@ -269,9 +268,6 @@
                       src="assets/images/1568235441-adu-interior-design-sun-valley-1920x1080.jpg" alt="" title="">
                     <div class="carousel-caption justify-content-center">
                       <div class="col-10 align-center">
-                        <blockquote class="blockquote">
-                          <p class="mb-0">"Enjoy Modern Living"</p>
-                        </blockquote>
                       </div>
                     </div>
                   </div>
@@ -284,9 +280,6 @@
                       src="assets/images/adu-garage-conversion-los-angeles-culver-city-2000x1333.jpg" alt="" title="">
                     <div class="carousel-caption justify-content-center">
                       <div class="col-10 align-center">
-                        <blockquote class="blockquote">
-                          <p class="mb-0">"Enjoy Modern Living"</p>
-                        </blockquote>
                       </div>
                     </div>
                   </div>
@@ -300,9 +293,6 @@
                       src="assets/images/elaine-adu-kitchen-emily-minton-redfield-1600x1200.jpg" alt="" title="">
                     <div class="carousel-caption justify-content-center">
                       <div class="col-10 align-center">
-                        <blockquote class="blockquote">
-                          <p class="mb-0">"Enjoy Modern Living"</p>
-                        </blockquote>
                       </div>
                     </div>
                   </div>
@@ -315,10 +305,6 @@
                       src="assets/images/garage-conversion-adu-studio-living-room-1500x1000.jpg" alt="" title="">
                     <div class="carousel-caption justify-content-center">
                       <div class="col-10 align-center">
-                        <blockquote class="blockquote">
-                          <p class="mb-0">" Trendy Comfortable, Unique, Living Style"
-                          </p>
-                        </blockquote>
                       </div>
                     </div>
                   </div>
@@ -331,10 +317,6 @@
                       src="assets/images/united-dwelling-modative-garage-adu-los-angeles-1920x1080.jpg" alt="" title="">
                     <div class="carousel-caption justify-content-center">
                       <div class="col-10 align-center">
-                        <blockquote class="blockquote">
-                          <p class="mb-0">" Trendy Comfortable, Unique, Living Style"
-                          </p>
-                        </blockquote>
                       </div>
                     </div>
                   </div>
@@ -347,10 +329,6 @@
                       src="assets/images/9.-2019-e-3rd-interior-departamento-1-1920x1080.jpg" alt="" title="">
                     <div class="carousel-caption justify-content-center">
                       <div class="col-10 align-center">
-                        <blockquote class="blockquote">
-                          <p class="mb-0">" Trendy Comfortable, Unique, Living Style"
-                          </p>
-                        </blockquote>
                       </div>
                     </div>
                   </div>
@@ -367,12 +345,30 @@
     </div>
   </section>
 
+  <section class="mbr-section info5 cid-sqwIQWiNI7" id="info5-m">
+    <div class="container">
+      <div class="row justify-content-center content-row">
+        <div class="media-container-column title col-12 col-lg-7 col-md-6">
+          <div id="contenido">
+            <blockquote class="blockquote">
+              <p class="mb-0">"Enjoy Modern Living"</p>
+            </blockquote>
+          </div>
+          <div id="contenido2" class="jsHideContainer" style="display:none">
+            <blockquote class="blockquote">
+              <p class="mb-0">" Trendy Comfortable, Unique, Living Style"
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- about -->
   <section class="tabs2 businessm4_tabs2 tabs cid-sqwKllmLcS" id="tabs2-p">
     <div class="container">
-      <h2 class="mbr-section-title align-center mbr-fonts-style pb-3 display-2">
-        About Us</h2>
+
 
       <div class="media-container-row">
         <div class="col-12 col-md-10">
@@ -383,10 +379,10 @@
                     href="#tabs2-p_tab0" aria-selected="true">
                     Mission</a></li>
               </ul> -->
-              <h4 class="display-2 align-left title-content pb-2 mbr-fonts-style">
+              <h4 class="display-2 align-center title-content pb-2 mbr-fonts-style">
                 Our Mission</h4>
               <blockquote class="blockquote">
-                <p class="mb-0">"Building Living Spaces For Precious Moments"</p>
+                <p class="mb-0">"Building Studio Creative Spaces For Precious Moments"</p>
               </blockquote>
             </div>
             <div class="col-md-8">
@@ -563,7 +559,34 @@
   <script src="assets/formoid.min.js"></script>
 
 
+  <script>
 
+    //Funcion que hace desaparecer el div transcurridos 3000 milisegundos!
+
+
+    $(document).ready(function () {
+      function hideShowContainers() {
+        //Validamos si contenedor2 tiene la clase 'jsHideContainer'  
+        if ($('#contenido2').hasClass('jsHideContainer')) {
+          //Eliminamos la clase 'jsHideContainer' para validar la parte negativa del condicional
+          $('#contenido2').removeClass('jsHideContainer');
+          //Ocultamos el contenedor1 mientras pasan 3 segundos  
+          $('#contenido').fadeOut(1);
+          //Mostramos el contenedor2 mientras pasan 3 segundos
+          $('#contenido2').fadeIn(1);
+        } else {
+          //Ocultamos el contenedor2 mientras pasan 3 segundos
+          $('#contenido2').fadeOut(1);
+          //Mostramos el contenedor1 mientras pasan 3 segundos
+          $('#contenido').fadeIn(1);
+          //Finalmente adicionamos la clase jsHideContainer para validar la parte positiva del condicional
+          $('#contenido2').addClass('jsHideContainer');
+        }
+      }
+      //Ejecutamos la función para que evalue los condicionales cada 5 segundos
+      setInterval(hideShowContainers, 14100);
+    });
+  </script>
 
 </body>
 
