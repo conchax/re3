@@ -14,17 +14,17 @@
 .menu a:hover {
   color: #b3b3b3 !important;
 }
-.btn-group,
+/* .btn-group,
 .btn-group-vertical {
   position: absolute !important;
   z-index: 7000;
   top: 110px;
   left: 10px;
-}
+} */
 .btn-secondary,
 .btn-secondary:active,
 .btn-secondary.active {
-  background-color: #3399ff !important;
+  background-color: #1862af !important;
   border-color: #3399ff !important;
   color: #ffffff !important;
 }
@@ -64,6 +64,8 @@
 }
 .dropdown-menu {
   background-color: rgba(255, 255, 255, 0.7);
+  width: 200px;
+  margin-left: 20px;
 }
 .tituloh {
   font-weight: 700;
@@ -87,4 +89,9 @@ button.navbar-toggler.menutext {
   color: aliceblue;
   border: 0;
   margin: auto;
+}
+
+.form-control {
+  padding: 1.07em 0.5em;
+  min-height: 0;
 }
