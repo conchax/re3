@@ -29,7 +29,7 @@
   color: #ffffff !important;
 }
 .btn {
-  padding: 5px 30px !important;
+  padding: 5px 10px !important;
   border-radius: 30px !important;
 }
 .cid-srp0i5a8hV {
@@ -91,7 +91,93 @@ button.navbar-toggler.menutext {
   margin: auto;
 }
 
-.form-control {
-  padding: 1.07em 0.5em;
+.property .form-control {
   min-height: 0;
+  font-size: 12px;
+}
+.property button {
+  font-size: 12px;
+}
+
+.y {
+  position: absolute;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.property {
+  margin-left: 100px;
+}
+.login {
+  position: absolute;
+  top: 8px;
+  right: 70px;
+  font-weight: 500;
+}
+
+@media (max-width: 1100px) {
+  .login {
+    display: contents;
+  }
+}
+@media (max-width: 576px) {
+  .property {
+    margin-left: 25%;
+  }
+}
+.navbar {
+  padding: 0;
+}
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+  font-size: 0;
+}
+.refer {
+  background-image: url("../../images/hero-referer.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 88vh;
+}
+
+.refer h1 {
+  font-size: 36px;
+  color: #ffffff;
+}
+.refer p {
+  color: #ffffff;
+}
+
+.newsletter {
+  padding: 2em 0;
+}
+.newsletter h2 {
+  font-size: 24px;
+}
+
+.form-control {
+  background-color: #f5f5f5;
+  box-shadow: none;
+  color: #565656;
+  line-height: 1em;
+  min-height: 0;
+  padding: 0 10px;
+}
+.form-app {
+  padding-bottom: 2em;
+}
+.form-app h2 {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 20px;
+}
+.download-news {
+  padding: 2em 0;
+}
+.download-news h2,
+.newsletter h2 {
+  font-size: 24px;
+  text-align: center;
 }
