@@ -128,7 +128,7 @@ button.navbar-toggler.menutext {
 .navbar {
   padding: 0;
 }
-.navbar-brand {
+.menu .navbar-brand {
   display: inline-block;
   padding-top: 0;
   padding-bottom: 0;
