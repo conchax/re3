@@ -108,18 +108,7 @@ button.navbar-toggler.menutext {
 .property {
   margin-left: 100px;
 }
-.login {
-  position: absolute;
-  top: 8px;
-  right: 70px;
-  font-weight: 500;
-}
 
-@media (max-width: 1100px) {
-  .login {
-    display: contents;
-  }
-}
 @media (max-width: 576px) {
   .property {
     margin-left: 25%;
@@ -139,7 +128,7 @@ button.navbar-toggler.menutext {
   background-image: url("../../images/hero-referer.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 88vh;
+  height: 78vh;
 }
 
 .refer h1 {
@@ -180,4 +169,10 @@ button.navbar-toggler.menutext {
 .newsletter h2 {
   font-size: 24px;
   text-align: center;
+}
+.log {
+  color: #f5f5f5;
+}
+.log:hover {
+  color: #b3b3b3;
 }
