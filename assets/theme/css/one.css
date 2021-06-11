@@ -117,13 +117,7 @@ button.navbar-toggler.menutext {
 .navbar {
   padding: 0;
 }
-.menu .navbar-brand {
-  display: inline-block;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-right: 0;
-  font-size: 0;
-}
+
 .refer {
   background-image: url("../../images/hero-referer.jpg");
   background-repeat: no-repeat;
